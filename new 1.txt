@@ -1,0 +1,124 @@
+aa
+
+$sql="INSERT into leave_requests(username,department,dateofrequest,leave_type,leave_from,leave_to,days,reason) VALUES('".$uname."','".$dept."','".$date."','".$type."','".$from."','".$to."','".$days."','".$reason."')" or die("failure");
+
+
+addstaff
+
+$sql="INSERT into staff_details(name,age,gender,DOB,designation,department,address,emailid,contactno,username,password) VALUES('$uname','$uage','$ugender','$udob','$udesg','$udept','$uaddr','$uemail','$umobile','$uuname','$upwd')";
+
+
+applyleave
+
+$sql1="INSERT into leave_requests(username,dateofrequest,leave_type,leave_from,leave_to,days,reason) VALUES('".$uname."','".$date."','".$type."','".$from."','".$to."','".$days."','".$reason."')" or die("failure");
+
+
+approve
+
+$q1="SELECT * from leave_requests WHERE leaveid='$a'";
+
+
+cl
+
+$sql="UPDATE staff_details SET setcasualleave='$cl' WHERE Username='$a'";
+$sql1="UPDATE leave_requests SET status='approved' WHERE leaveid='$l'";
+
+
+deletestaff
+
+$sql="delete from staff_details where Username='$uname12'
+
+
+el
+
+$q="SELECT * from staff_details WHERE username='$a'";
+$sql="UPDATE staff_details SET setearnedleave='$el' WHERE Username='$a'";
+$sql1="UPDATE leave_requests SET status='approved' WHERE leaveid='$l'";
+
+
+history
+
+$sql="select * from leave_requests where leaveid='$id' ";
+
+
+manage
+
+$sql="select * from leave_requests";
+
+
+mm
+
+$sql="select * from leave_requests";
+
+
+pass
+
+$sql="UPDATE admin_login set password='$new1' WHERE username='$a'";
+
+
+pass1
+
+$sql="UPDATE adm_login set password='$new1' WHERE username='$a'";
+
+
+pass2
+
+$sql="UPDATE staff_details set Password='$newp1' WHERE Username='$a'";
+
+reject
+
+$q1="SELECT * from leave_requests WHERE leaveid='$a'";
+
+
+rl
+
+$sql="UPDATE leave_requests SET status='rejected' WHERE userName='$a'";
+
+
+s3
+
+$sql="SELECT * FROM staff_details WHERE Username='$Username'";
+
+
+sl
+
+
+$q="SELECT * from staff_details WHERE username='$a'";
+$sql="UPDATE staff_details SET setsickleave='$sl' WHERE Username='$a'";
+$sql1="UPDATE leave_requests SET status='approved' WHERE leaveid='$l'";
+
+
+stat
+
+$sql="SELECT * FROM staff_details WHERE Username='$Username'";
+
+
+status
+
+$sql="SELECT * FROM leave_requests WHERE Username='$Username'";
+
+
+succus
+
+$sql="SELECT * FROM adm_login WHERE username='$uname' AND password='$upassword'";
+
+
+succus2
+
+$sql="SELECT * FROM staff_details WHERE Username='$usrname' AND Password='$upwd'";
+
+
+viewall
+
+$sql="SELECT * FROM staff_details";
+
+
+
+
+
+
+
+
+
+
+
